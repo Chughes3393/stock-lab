@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 class StockInfo extends Component {
     render() {
+        console.log(this.props)
         return (
             <div>
                 <form>
                 <input type='text' search='search'></input>
-                <button>Search </button>
+                <button onClick={this.props.handleSubmit}>Search </button>
                 </form>
 
                 <div>
